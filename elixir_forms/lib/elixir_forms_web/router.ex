@@ -25,6 +25,8 @@ defmodule ElixirFormsWeb.Router do
 
     live "/questions/:id", QuestionLive.Show, :show
     live "/questions/:id/show/edit", QuestionLive.Show, :edit
+
+    live "/answer", QuestionLive.Answer, :new
   end
 
   # Other scopes may use custom stacks.
